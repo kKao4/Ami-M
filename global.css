@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+html {
+  position: relative;
+  font-size: 1vw;
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 4.267vw;
+  }
+}
+
+:root {
+  --Foundation-Violet-Untitled-blue-500: #165bb8;
+  --Foundation-Deep-Blue-blue-500: #011942;
+  --Neutral-N500: #333;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #f4475c;
+  border-radius: 0.5rem;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+section {
+  position: relative;
+}
+
+.section-bg-img {
+  pointer-events: none;
+}
+
+.letter-fadeInUp,
+.dot-fadeIn,
+.heading-banner-word {
+  visibility: hidden;
+}
+
+.primary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 2.125rem 1.125rem 2.125rem;
+  width: fit-content;
+  border-radius: 9999px;
+  background: #2f2e79;
+  overflow: hidden;
+  position: relative;
+}
+
+.primary-btn p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.primary-btn svg {
+  width: 0.8125rem;
+  height: 0.75rem;
+  margin-left: 0.44rem;
+}
+
+.primary-btn > *:not(.btn-round-deco) {
+  z-index: 1;
+}
+
+.btn-round-deco {
+  background-color: #f4475c;
+  position: absolute;
+  z-index: 0;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  top: 0;
+  left: 0;
+  transition: transform 0.6s ease-out;
+}
+
+@media (max-width: 767px) {
+  .primary-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.875rem 1.5625rem;
+    width: fit-content;
+    border-radius: 9999px;
+    background: #2f2e79;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .primary-btn p {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .primary-btn svg {
+    width: 0.52569rem;
+    height: 0.48525rem;
+  }
+
+  .primary-btn > *:not(.btn-round-deco) {
+    z-index: 1;
+  }
+
+  .btn-round-deco {
+    background-color: #f4475c;
+    position: absolute;
+    z-index: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 9999px;
+    top: 0;
+    left: 0;
+    transition: transform 0.6s ease-out;
+  }
+}
